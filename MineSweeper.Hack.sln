@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MineSweeper.Hack.Library", "MineSweeper.Hack.Library\MineSweeper.Hack.Library.vcxproj", "{9514501F-3614-451D-9AF9-A3EE16CB3EA0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MineSweeper.Hack.Client.Example", "MineSweeper.Hack.Client.Example\MineSweeper.Hack.Client.Example.vcxproj", "{7FCCC844-2F96-440F-9B33-40F0949BC46B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9514501F-3614-451D-9AF9-A3EE16CB3EA0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9514501F-3614-451D-9AF9-A3EE16CB3EA0}.Debug|Win32.Build.0 = Debug|Win32
+		{9514501F-3614-451D-9AF9-A3EE16CB3EA0}.Release|Win32.ActiveCfg = Release|Win32
+		{9514501F-3614-451D-9AF9-A3EE16CB3EA0}.Release|Win32.Build.0 = Release|Win32
+		{7FCCC844-2F96-440F-9B33-40F0949BC46B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7FCCC844-2F96-440F-9B33-40F0949BC46B}.Debug|Win32.Build.0 = Debug|Win32
+		{7FCCC844-2F96-440F-9B33-40F0949BC46B}.Release|Win32.ActiveCfg = Release|Win32
+		{7FCCC844-2F96-440F-9B33-40F0949BC46B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
