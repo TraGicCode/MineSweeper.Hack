@@ -17,11 +17,11 @@ MineSweeperHack::MineSweeperHack(HMODULE baseAddress)
 void MineSweeperHack::SetMineCount(int mineCount)
 {
 	ASSERT(m_GameBaseAddress);
-	*(PDWORD)(m_GameBaseAddress + DataOffsets::MINECOUNT) = mineCount;
+	*reinterpret_cast<PDWORD>(m_GameBaseAddress + DataOffsets::MINECOUNT) = mineCount;
 }
 
 void MineSweeperHack::SetTimer(int value)
 {
 	ASSERT(m_GameBaseAddress);
-	*(PDWORD)(m_GameBaseAddress + DataOffsets::TIMER) = value;
+	*reinterpret_cast<PDWORD>(m_GameBaseAddress + DataOffsets::TIMER) = value;
 }
