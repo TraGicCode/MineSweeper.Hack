@@ -12,8 +12,8 @@ class MINESWEEPER_HACK_LIBRARY_API MineSweeperHack
 private:
 	DWORD m_GameBaseAddress;
 public:
-	MineSweeperHack(HMODULE gameBaseAddress);
-	MineSweeperHack(const MineSweeperHack&) = delete;
+	explicit MineSweeperHack(HMODULE gameBaseAddress);
+    MineSweeperHack(const MineSweeperHack&) = delete;
 	MineSweeperHack& operator=(const MineSweeperHack&) = delete;
 	void SetTimer(int value);
 	void SetMineCount(int mineCount);
