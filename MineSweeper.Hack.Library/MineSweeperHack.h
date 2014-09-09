@@ -7,10 +7,6 @@
 #define MINESWEEPER_HACK_LIBRARY_API __declspec(dllimport)
 #endif
 
-
-
-// Mine # - Winmine__XP.exe+56A4
-
 class MINESWEEPER_HACK_LIBRARY_API MineSweeperHack
 {
 private:
@@ -19,4 +15,5 @@ public:
 	MineSweeperHack(HMODULE gameBaseAddress);
 	void SetTimer(int value);
 	void SetMineCount(int mineCount);
+	void ShowBombs();
 };

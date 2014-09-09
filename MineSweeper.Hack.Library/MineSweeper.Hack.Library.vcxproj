@@ -74,6 +74,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Debug.h" />
+    <ClInclude Include="MineSweeperEnums.h" />
     <ClInclude Include="MineSweeperHack.h" />
     <ClInclude Include="Precompiled.h" />
   </ItemGroup>

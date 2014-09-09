@@ -7,7 +7,7 @@ auto WINAPI MainThread(LPVOID) -> DWORD
 	MineSweeperHack hack = MineSweeperHack(GetModuleHandle(L"Winmine__XP.exe"));
 	hack.SetMineCount(2);
 	hack.SetTimer(0);
-
+	hack.ShowBombs();
 	return 0;
 }
 
