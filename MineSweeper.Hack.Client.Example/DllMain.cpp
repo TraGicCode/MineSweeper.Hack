@@ -4,7 +4,8 @@
 
 auto WINAPI MainThread(LPVOID) -> DWORD
 {
-	MineSweeperHack hack = MineSweeperHack(GetModuleHandle(L"Winmine__XP.exe"));
+	// NOTE: Passing NULL/nullptr to GetModuleHandle will return the base address of the image file, that is minesweeper.
+	MineSweeperHack hack = MineSweeperHack(GetModuleHandle(nullptr));
 	hack.SetMineCount(2);
 	hack.SetTimer(0);
 	hack.ShowBombs();
