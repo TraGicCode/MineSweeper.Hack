@@ -13,6 +13,8 @@ private:
 	DWORD m_GameBaseAddress;
 public:
 	MineSweeperHack(HMODULE gameBaseAddress);
+	MineSweeperHack(const MineSweeperHack&) = delete;
+	MineSweeperHack& operator=(const MineSweeperHack&) = delete;
 	void SetTimer(int value);
 	void SetMineCount(int mineCount);
 	void ShowBombs();
