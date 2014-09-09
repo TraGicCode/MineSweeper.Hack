@@ -22,19 +22,19 @@ MineSweeperHack::MineSweeperHack(HMODULE baseAddress)
 	ASSERT(m_GameBaseAddress);
 }
 
-void MineSweeperHack::SetMineCount(int mineCount)
+auto MineSweeperHack::SetMineCount(int mineCount) -> void
 {
 	ASSERT(m_GameBaseAddress);
 	*reinterpret_cast<PDWORD>(m_GameBaseAddress + DataOffsets::MINECOUNT) = mineCount;
 }
 
-void MineSweeperHack::SetTimer(int value)
+auto MineSweeperHack::SetTimer(int value) -> void
 {
 	ASSERT(m_GameBaseAddress);
 	*reinterpret_cast<PDWORD>(m_GameBaseAddress + DataOffsets::TIMER) = value;
 }
 
-void MineSweeperHack::ShowBombs()
+auto MineSweeperHack::ShowBombs() -> void
 {
 	ASSERT(m_GameBaseAddress);
 	reinterpret_cast<ShowBombsFn>(m_GameBaseAddress + FunctionOffsets::SHOW_BOMBS)(static_cast<DWORD>(ENUMS::BOMB));
